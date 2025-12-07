@@ -1,0 +1,105 @@
+/* Basic Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    line-height: 1.6;
+    margin: 20px auto; /* Center the resume on the page */
+    padding: 0 20px;
+    max-width: 800px; /* Set a comfortable reading width */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    /* Main section headings (EXPERIENCE, SKILLS, EDUCATION) */
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333; /* Horizontal line separator */
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    /* Job/Degree titles */
+    font-size: 1.1em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Header/Contact Info */
+#name-contact {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+.contact-info a {
+    color: #007bff; /* Example link color */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Job/Experience Styling */
+.job-entry, .education-entry {
+    margin-bottom: 1em;
+    padding-left: 10px;
+}
+
+.job-header {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Push title and dates to opposite ends */
+    align-items: baseline;
+    margin-bottom: 0.1em;
+}
+
+.company {
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+    font-size: 0.95em;
+}
+
+.dates {
+    font-size: 0.95em;
+    font-weight: normal; /* Override h3's bold */
+    color: #666;
+}
+
+.job-entry ul {
+    list-style: disc; /* Use standard bullet points */
+    padding-left: 20px;
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
+/* Skills Section */
+#skills p {
+    /* Separate skills by commas with a little extra space */
+    line-height: 1.8;
+}
+
+/* Education Section */
+.education-entry p {
+    margin: 0.2em 0;
+    font-size: 0.95em;
+}
+
+/* Optional: Print Styles */
+@media print {
+    /* Adjust styles for better printing (e.g., remove background images/colors) */
+    body {
+        margin: 0;
+        max-width: none;
+    }
+    .contact-info a {
+        text-decoration: underline; /* Make sure links are visible on paper */
+    }
+}
